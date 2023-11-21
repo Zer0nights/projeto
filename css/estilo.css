@@ -129,23 +129,11 @@ section h2{
     border: 1px solid #8E8FFA;
     border-radius: 10px;
     cursor: pointer;
+    text-align: center;
 }
-.card:hover{
-    background:#8E8FFA;
-    color:black;
-    padding: 40px;
-}
-.card:hover img{
-    display: none;
-}
-.card:hover .card-text{
-    display: none;
-}
-.card:hover .oculto{
-    display: block;
-}
-.oculto{
-    display: none;
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências (...) para indicar que o texto foi cortado */
 }
 .footer{
     margin-top: 100px;
